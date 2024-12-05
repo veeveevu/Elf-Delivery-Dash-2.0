@@ -42,10 +42,11 @@ body {
 
 .airport .tooltip {
     position: absolute;
-    top: -25px; /* Adjust tooltip above the icon */
+    top: -40px;
     left: 50%;
     transform: translateX(-50%);
     padding: 5px 10px;
+    background: antiquewhite;
     color: #225400;
     border-radius: 4px;
     font-size: 14px;
