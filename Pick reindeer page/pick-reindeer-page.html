@@ -5,20 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elf Delivery Dash</title>
     <link rel="stylesheet" href="pick-reindeer-page.css">
+    <script src="pick-reindeer-page.js"></script>
 </head>
 <body>
   <div>
       <img src="Reindeer pics/Pick reindeer fix image.png" height="1080" width="1920" alt="Background" class="background"/>
       <div class="reindeer-container">
-        <img src="Reindeer pics/Rudolph.png" height="1024" width="820" alt="Rudolph" class="reindeer" onclick="goToMainPage()"/>
-        <img src="Reindeer pics/Vixen.png" height="1024" width="820" alt="Vixen" class="reindeer" onclick="goToMainPage()"/>
-        <img src="Reindeer pics/Cupid.png" height="1024" width="820" alt="Cupid" class="reindeer" onclick="goToMainPage()"/>
+        <img id="2001" src="Reindeer pics/Rudolph.png" height="1024" width="820" alt="Rudolph" class="reindeer"/>
+        <img id="2002" src="Reindeer pics/Vixen.png" height="1024" width="820" alt="Vixen" class="reindeer"/>
+        <img id="2003" src="Reindeer pics/Cupid.png" height="1024" width="820" alt="Cupid" class="reindeer"/>
       </div>
   </div>
-  <script>
-      function goToMainPage() {
-        window.location.href = "../Main page/main-page.html"
-      }
-  </script>
 </body>
 </html>
