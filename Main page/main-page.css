@@ -8,16 +8,16 @@ body {
 .map-container {
     position: relative;
     width: 100%;
-    height: auto; /* Full height of the viewport */
-    overflow: auto; /* Allow scrolling when map is larger than the container */
+    height: auto;
+    overflow: auto;
     display: flex;
-    justify-content: center; /* Center map horizontally */
-    align-items: center; /* Center map vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .map-image {
     width: 100%;
-    height: auto; /* Ensures the map scales proportionally */
+    height: auto;
     object-fit: contain;
     z-index: -1;
 }
@@ -60,3 +60,22 @@ body {
 .airport:hover .tooltip {
     opacity: 1; /* Show tooltip on hover */
 }
+
+#letter-count-container {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+.letter-count-number text {
+    font-weight: bold;
+    color: #333;
+
+}
+

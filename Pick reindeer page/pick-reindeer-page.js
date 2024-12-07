@@ -7,8 +7,10 @@ document.addEventListener('DOMContentLoaded', async function () {
     const data = await response.json();
 
     if (data.player_id) {
+      console.log("Player ID received:", data.player_id);
       const playerId = data.player_id
       console.log("Player_id got successfully!");
+      return playerId
 
       const reindeerImages = document.querySelectorAll('.reindeer');
       reindeerImages.forEach(function(reindeer) {

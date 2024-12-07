@@ -90,6 +90,21 @@ def update_reindeer_to_player():
         app.logger.error(f"Error updating reindeer into player table: {e}")
         return jsonify({"error": "Internal server error"}), 500
 
+@app.route('/get_letter_count', methods=['GET'])
+def get_letter_count():
+    player_id = request.args.get('player_id')
+    connection = get_db_connection()
+    cursor = connection.cursor(dictionary=True)
+
+    sql14 = f"SELECT letter_count FROM player WHERE player_id = {player_id}"
+    cursor.execute(sql14, (player_id,))
+    letter_count = cursor.fetchone()
+
+    cursor.close()
+    connection.close()
+
+    return jsonify(letter_count)
+
 
 
 if __name__ == '__main__':
